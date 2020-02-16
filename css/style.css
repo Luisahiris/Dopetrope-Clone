@@ -1,59 +1,196 @@
 body {
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(233, 233, 233);
+    margin: 0em;
+    padding: 0em;
+    background-color: #f7f7f7;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 header {
+    display: grid;
+    place-items: center;
     background-color: white;
-    width: 100%;
-    height: 190px;
-    padding: 3em 0em 1em;
-    text-align: center;
-    color: rgb(32, 32, 32);
+    padding: 2em;
 }
-header h1 {
-    font-family: 'Coiny', cursive;
+header h1{
+    color: rgb(39, 39, 39);
     font-size: 2.5em;
+    font-weight: 900;
+    padding-top: 0.1em;
 }
 nav {
-    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(5, 8em);
+    place-items: center;
     list-style: none;
+    font-size: 1em;
     font-style: italic;
-    font-family: 'Comfortaa', cursive;
-    font-size: 0.8em;
-    color: rgb(126, 126, 126);
+    margin: 1em;
 }
-nav li {
-    display: inline;
-    margin: 1.5em;
-    padding: 0.7em 0.8em;
+nav li a{
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em; 
+    color: rgb(97, 97, 97);
+}
+nav > li > a:hover{
+    background-color: #f3f3f3;
+}
+.current > a{
+    background-color: #d52349; 
+    color: white; 
+    font-weight: 700;
 }
 #howdy {
-    background-image: url(../img/a.png);
+    display: grid;
+    background-image: url(../img/pic01.jpg);
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 16em;
-    padding: 5em;
+    background-position: center center;
+    width: 100%;
+    height: 26em;
+    padding: 0.01em;
+    background-color: #CCE8F4;
+    place-items: center;
 }
-#howdy div {
-    background-color: rgb(37, 37, 37);
-    width: 35em;
-    height: 8em;
-    padding: 0.5em;
+
+#howdy div{
+    background-color: rgba(34, 30, 31, 0.98);
+    display: inline-block;
+    width: 30em;
     text-align: center;
-    margin: 2.5em 18em;
+    border-radius: 0.3em;
+    padding: 2.3em 4em;
 }
-#howdy h1 {
+#howdy h1{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 5000;
-    font-size: 2.3em;
-    margin-bottom: 0%;
+    font-size: 2.5em;
+    margin: 0%;
 }
-#howdy p {
-    color: rgb(219, 33, 64);
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.3em;
-    font-stretch: ultra-condensed;
-    font-weight: lighter;
+#howdy p{
+    color: rgb(207, 31, 60);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0.5em 0% 0%;
+}
+#get-started{
+    display: grid;
+    grid-template-columns: 4em auto 4em;
+    grid-template-rows: auto 5em;
+    background-color: white;
+    text-align: center;
+    padding: 0em 2em 5.3em;
+    border-bottom: 0.8px solid;
+    border-color: rgb(190, 190, 190);
+}
+.options{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.options h2{
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.options p{
+    color: rgb(97, 97, 97);
+    font-weight: 300;
+    line-height: 1.8em;
+}
+.option{
+    padding: 5em 1em;
+}
+#get-started .icon{
+    color: white;
+    font-size: 4.5em;
+    display: inline-block;
+    width: 2em;
+    height: 1.5em;
+    padding-top: 0.3em;
+    border-radius: 0.1em;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+#left .icon{
+    background-color: #d52349;
+}
+#center .icon{
+    background-color: rgb(34, 34, 34);
+}
+#right .icon{
+    background-color: gray;
+}
+/* #center{
+    -webkit-box-shadow: 6px 0px 6px -6px black;
+	-moz-box-shadow: -6px 0px 6px -6px black;
+	box-shadow: -6px 0px 6px -6px black;
+} */
+#get-started footer{    
+    grid-column: 2;
+    grid-row: 2;
+}
+#get-started footer button{
+    margin: 8px;
+    padding: 1em 4.3em;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+}
+#get {
+    background-color: #d52349;
+}
+#learn{
+    background-color: rgb(34, 34, 34);
+}
+#my-portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 21.2em);
+    justify-content: center;
+    gap: 3.2em;
+}
+.portfolio{
+    background-color: white;
+    border-bottom: 1px solid;
+    border-color: rgb(216, 216, 216);
+}
+.portfolio div{
+    padding: 1.8em;
+    line-height: 1.8em;
+    font-weight: 300;
+    color: rgb(97, 97, 97);
+}
+.portfolio h3{
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.portfolio img{
+    width: 21.2em;
+}
+.portfolio button{
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: rgb(34, 34, 34);
+    padding: 1em 1.5em;
+    margin: 1em 0;
+}
+#my-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 33.5em);
+    justify-content: center;
+    gap: 3em;
+}
+.blogs{
+    background-color: white;
+    /* padding: 3em; */
+}
+.blogs img{
+    width: 33.5em;
 }

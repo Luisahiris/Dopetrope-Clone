@@ -4,103 +4,152 @@
         <meta charset="UTF-8">
         <title>Dopetrope Clone</title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lalezar|Roboto+Condensed:300i&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Coiny|Comfortaa:300,400,700|Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e164eef749.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <h1>Dopetrope</h1>
             <nav>
-                <li style="background-color: rgb(224, 26, 59); border-radius: 0.4em; color: white;">Home</li>
-                <li>Dropdown</li>
-                <li>Left Sidebar</li>
-                <li>Right Sidebar</li>
-                <li>No Sidebar</li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Left Sidebar</a></li>
+                <li><a href="#">Right Sidebar</a></li>
+                <li><a href="#">No Sidebar</a></li>
             </nav>
         </header>
         <section id="howdy">
             <div>
                 <h1>Howdy. This is Dopetrope.</h1>
-                <p>A responsive template by HTML5 UP.</p>
+                <p>A responsive template by HTML5 UP</p>
             </div>
         </section>
         <div id="get-started">
-            <div class="options" id="left">
-                <p class="icon"></p>
-                <h1>Ipsum consequat</h1>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+            <div class="options">
+                <div class="option" id="left">
+                    <div class="icon"><i class="fas fa-cog"></i></div>
+                    <h2>Ipsum consequat</h2>
+                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                </div>
+                <div class="option" id="center">    
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h2>Magna etiam dolor</h2>
+                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                </div>
+                <div class="option" id="right">
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h2>Tempus adipiscing</h2>
+                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                </div>
             </div>
-            <div class="options" id="center">    
-                <p class="icon"></p>
-                <h1>Magna etiam dolor</h1>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-            </div>
-            <div class="options" id="rigth">
-                <p class="icon"></p>
-                <h1>Tempus adipiscing</h1>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-            </div>
-            <button id="get">Get Started</button>
-            <button id="learn">Learn More</button>
+            <footer>
+                <button id="get">Get Started</button>
+                <button id="learn">Learn More</button>
+            </footer>
         </div>
-        <div id="my-portfolio">
-            <div class="portfolio">
-                <img src="img/pic02.jpg">
-                <h2>Ipsum feugiat et dolor</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
+        <section>
+            <h2>My Portfolio</h2>
+            <div id="my-portfolio">
+                <div class="portfolio">
+                    <img src="img/pic02.jpg">
+                    <div>
+                        <h3>Ipsum feugiat et dolor</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="img/pic03.jpg">
+                    <div>
+                        <h3>Sed etiam lorem nulla</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="img/pic04.jpg">
+                    <div>
+                        <h3>Consequat et tempus</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="img/pic05.jpg">
+                    <div>
+                        <h3>Blandit sed adipiscing</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="img/pic06.jpg">
+                    <div>
+                        <h3>Etiam nisl consequat</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="img/pic07.jpg">
+                    <div>
+                        <h3>Dolore nisl feugiat</h3>
+                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                        <button class="find-out">Find out more</button>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio">
-                <img src="img/pic03.jpg">
-                <h2>Sed etiam lorem nulla</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
+        </section>
+        <section>
+            <h2>The Blog</h2>
+            <div id="my-blog">
+                <div class="blogs">
+                    <img src="img/pic08.jpg">
+                    <h2>Magna tempus consequat</h2>
+                    <h5>Posted 45 minutes ago</h5>
+                    <p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
+                    <button class="read">Continue Reading</button>
+                    <button class="comments">33 comments</button>
+                </div>
+                <div class="blogs">
+                    <img src="img/pic09.jpg">
+                    <h2>Aptent veroeros aliquam</h2>
+                    <h5>Posted 45 minutes ago</h5>
+                    <p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
+                    <button class="read">Continue Reading</button>
+                    <button class="comments">33 comments</button>
+                </div>
             </div>
-            <div class="portfolio">
-                <img src="img/pic04.jpg">
-                <h2>Consequat et tempus</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
-            </div>
-            <div class="portfolio">
-                <img src="img/pic05.jpg">
-                <h2>Blandit sed adipiscing</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
-            </div>
-            <div class="portfolio">
-                <img src="img/pic06.jpg">
-                <h2>Etiam nisl consequat</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
-            </div>
-            <div class="portfolio">
-                <img src="img/pic07.jpg">
-                <h2>Dolore nisl feugiat</h2>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                <button class="find-out">Find out more</button>
-            </div>
-        </div>
-        <div id="my-blog">
-            <div class="blogs">
-                <img src="img/pic08.jpg">
-                <h2>Magna tempus consequat</h2>
-                <h5>Posted 45 minutes ago</h5>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-                <button class="read">Continue Reading</button>
-                <button class="comments">33 comments</button>
-            </div>
-            <div class="blogs">
-                <img src="img/pic09.jpg">
-                <h2>Aptent veroeros aliquam</h2>
-                <h5>Posted 45 minutes ago</h5>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-                <button class="read">Continue Reading</button>
-                <button class="comments">33 comments</button>
-            </div>
-        </div>
+        </section>
         <footer>
-            <div class=""
+            <div id="blandit">
+                <h1>Blandit nisl adipiscing</h1>
+                <div class="divisions">
+                    <p class="shapes">Jan 27</p>
+                    <h1>Lorem dolor sit amet veroeros</h1>
+                    <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+                </div>
+                <div class="divisions">
+                    <p class="shapes">Jan 23</p>
+                    <h1>Ipsum sed blandit nisl consequat</h1>
+                    <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+                </div>
+                <div class="divisions">
+                    <p class="shapes">Jan 15</p>
+                    <h1>Magna tempus lorem feugiat</h1>
+                    <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+                </div>
+                <div class="divisions">
+                    <p class="shapes">Jan 12</p>
+                    <h1>Dolore tempus ipsum feugiat nulla</h1>
+                    <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+                </div>
+                <div class="divisions">
+                    <p class="shapes">Jan 10</p>
+                    <h1>Blandit tempus aliquam?</h1>
+                    <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
