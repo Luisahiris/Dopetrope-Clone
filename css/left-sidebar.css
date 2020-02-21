@@ -1,0 +1,77 @@
+#body{
+    display: grid;
+    grid-template-columns: auto 65%;
+    margin: 4em 8em;
+    gap: 3em;
+}
+section, aside div{
+    background-color: white;
+}
+section{
+    grid-column-start: 2;
+}
+aside{
+    grid-column-start: 1;
+    grid-row: 1;
+}
+section div, aside div{
+    padding: 1em 2em;
+}
+section img{
+    width: 100%;
+}
+section h1{
+    text-align: start;
+    font-size: 2.5em;
+    margin-bottom: 0em;
+    color: rgb(44, 44, 44);
+}
+#body p{
+    color: rgb(94, 94, 94);
+    font-weight: 300;
+    line-height: 1.8em;
+}
+.subtitle{
+    font-style: italic;
+    font-size: 1.3em;
+    margin: 0.3em 0em 1.5em;
+}
+#body h3{
+    font-size: 1.3em;
+    color: rgb(44, 44, 44);
+}
+aside div{
+    margin-bottom: 2em;
+}
+button{
+    border: none;
+    background-color: rgb(44, 44, 44);
+    padding: 1em 1.2em;
+    font-weight: 900;
+    color: white;
+    border-radius: 0.2em;
+    font-size: 0.9em;
+    margin: 1em 0em;
+}
+aside img{
+    width: 100%;
+}
+aside li{
+    list-style: none;
+    list-style-position: outside;
+    padding: 1em 0em;
+    border-bottom: 0.01em solid;
+    border-color: rgb(204, 204, 204);
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+aside li a{
+    color: rgb(194, 1, 43);
+    font-weight: 300;
+}
+aside li a:hover{
+    text-decoration: none;
+}
