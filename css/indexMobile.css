@@ -1,0 +1,135 @@
+body {
+    margin: 0em;
+    padding: 0em;
+    background-color: #f7f7f7;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p, a{
+    color: rgb(88, 86, 86);
+    font-weight: 300;
+}
+li{
+    list-style: none;
+    padding:1em;
+    border-bottom: 0.01em solid;
+    border-color: rgb(133, 133, 133);
+}
+nav {
+    background-color: rgb(34, 34, 34);
+    display: none;
+    position: fixed;
+    top: 0em;
+    font-size: 3em;
+    font-style: italic;
+    height: 39.3em;
+    width: 16em;
+}
+nav li a{
+    text-decoration: none;
+}
+nav li ul{
+    display: none;
+}
+nav li ul li{
+    border: none;
+}
+header{
+    background-color: white;
+    text-align: center;
+}
+header h1{
+    margin: 0em;
+    font-size: 5em;
+    font-weight: 900;
+    padding: 1em 0em 0.2em;
+    color: rgb(32, 32, 32);
+}
+#howdy{
+    background-image: url('../img/pic01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240%;
+    padding: 21em 0em;
+    background-color: white;
+}
+#howdy div{
+    background-color: rgb(34, 31, 31);
+    text-align: center;
+    padding: 2.5em 3em;
+}
+#howdy h1{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+#howdy p{
+    color: rgb(207, 31, 60);
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+#get-started{
+    background-color: white;
+}
+#get-started h2{
+    font-size: 30px;
+}
+.option{
+    padding: 80px 5px;
+    line-height: 4em;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    text-align: center;
+    line-height: 5em;
+    border-bottom: rgb(211, 211, 211) solid;
+}
+.option p{
+    font-size: 0.9em;
+    margin-bottom: 2.5em;
+}
+#get-started .icon{
+    color: white;
+    font-size: 12.5em;
+    display: inline-block;
+    border-radius: 0.07em 0.07em 0.055em 0.055em;
+    width: 1.8em;
+    height: 310px;
+    margin-top: 5px;
+}
+.icon i{
+    position: relative;
+    top: 80px;
+}
+.shape{
+    margin-top: -3.5px;
+    width: 0 ;
+    height: 0;
+    border-left: 180.5px solid transparent;
+    border-right: 180.4px solid transparent;
+    border-top-left-radius: 15.5px;
+    border-top-right-radius: 13px;
+    margin-bottom: 2em;
+}
+#left .icon{
+    background-color: #d52349;
+}
+#left .shape {
+    border-top: 5.5em solid #d52349;
+}
+#center .icon{
+    background-color: rgb(34, 34, 34);
+    margin-top: 35px;
+}
+#center .shape{
+    border-top: 5.5em solid rgb(34, 34, 34);
+}
+#right .icon{
+    background-color: gray;
+    margin-top: 35px;
+}
+#right .shape{
+    border-top: 5.5em solid gray;
+}
+.last{
+    border-bottom: none !important;
+}
