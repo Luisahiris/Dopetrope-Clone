@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Right Sidebar</title>
-        <link rel="stylesheet" href="css/right-sidebar.css">
+        <title>Sidebar</title>
+        <link rel="stylesheet" href="css/left-sidebar.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/baseCSS.css">
         <script src="https://kit.fontawesome.com/e164eef749.js" crossorigin="anonymous"></script>
@@ -37,9 +37,9 @@
                         <li><a href="#">Veroeros feugiat</a></li>
                     </ul>
                 </li>
-                <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                <li class="current"><a href="#">Right Sidebar</a></li>
-                <li><a href="no-sidebar.html">No Sidebar</a></li>
+            <li id="leftSide"><a onclick="Current ( 'leftSide' )">Left Sidebar</a></li>
+                <li id="rightSide"><a onclick="Current ( 'rightSide' )">Right Sidebar</a></li>
+                <li id="noSide"><a onclick="Current ( 'noSide' )">No Sidebar</a></li>
             </nav>
         </header>
         <div id="body">
@@ -174,5 +174,6 @@
                 <div>Demo Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a></div>
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>

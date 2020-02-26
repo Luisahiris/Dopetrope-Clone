@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Dopetrope Clone</title>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/indexMobile.css">
+        <link rel="stylesheet" href="css/index.css" media="screen and (min-device-width: 1200px and max-device-width: 1600px)">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/baseCSS.css">
+        <link rel="stylesheet" href="css/baseCSS.css" media="screen and (min-device-width: 1200px and max-device-width: 1600px)">
         <script src="https://kit.fontawesome.com/e164eef749.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -14,12 +15,12 @@
             <nav>
                 <li class="current"><a href="index.html">Home</a></li>
                 <li id="dropdown">
-                    <a href="index.html">Dropdown</a>
+                    <a>Dropdown</a>
                     <ul id="first">
                         <li><a href="#">Lorem ipsum dolor </a></li>
                         <li><a href="#">Magna phasellus</a></li>
                         <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Phasellus consequat</a>
+                        <li id="phasellus"><a>Phasellus consequat</a>
                             <ul id="second">
                                 <li><a href="#">Lorem ipsum dolor </a></li>
                                 <li><a href="#">Magna phasellus</a></li>
@@ -31,9 +32,9 @@
                         <li><a href="#">Veroeros feugiat</a></li>
                     </ul>
                 </li>
-                <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                <li><a href="no-sidebar.html">No Sidebar</a></li>
+            <li id="leftSide"><a href="sidebar.html" onclick="() => { Sidebar ( left ) }">Left Sidebar</a></li>
+                <li id="rightSide"><a href="sidebar.html">Right Sidebar</a></li>
+                <li id="noSide"><a href="sidebar.html">No Sidebar</a></li>
             </nav>
         </header>
         <section id="howdy">
@@ -46,29 +47,32 @@
             <div class="options">
                 <div class="option" id="left">
                     <div class="icon"><i class="fas fa-cog"></i></div>
+                    <div class="shape"></div>
                     <h2>Ipsum consequat</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
                 <div class="option" id="center">    
                     <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <div class="shape"></div>
                     <h2>Magna etiam dolor</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
-                <div class="option" id="right">
+                <div class="option last" id="right">
                     <div class="icon"><i class="fas fa-star"></i></div>
+                    <div class="shape"></div>
                     <h2>Tempus adipiscing</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
             </div>
-            <footer>
+            <div id="buttons">
                 <button id="get">Get Started</button>
                 <button id="learn">Learn More</button>
-            </footer>
+            </div>
         </div>
         <section>
-            <header id="port">   
+            <div id="port">   
                 <h1>My Portfolio</h1>
-            </header>
+            </div>
             <div id="my-portfolio">
                 <div class="portfolio">
                     <img src="img/pic02.jpg">
@@ -244,5 +248,6 @@
                 <div>Demo Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a></div>
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
