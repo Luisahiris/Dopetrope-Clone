@@ -4,18 +4,34 @@ body {
     background-color: #f7f7f7;
     font-family: 'Source Sans Pro', sans-serif;
 }
-p, a{
-    color: rgb(88, 86, 86);
+p{
+    color: rgb(110, 108, 108);
+    font-weight: 300;
+}
+a{
+    color: inherit;
     font-weight: 300;
 }
 li{
     list-style: none;
-    padding:1em;
+    padding: 1em;
     border-bottom: 0.01em solid;
     border-color: rgb(133, 133, 133);
 }
+.icon-bar{
+    text-align: center;
+    position: fixed;
+    background-color: rgba(110, 110, 110, 0.582);
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+    padding: 0.8em 1.2em 0.8em 0.9em;
+    border-radius: 20px;
+    top: 30px;
+    left: 30px;
+}
 nav {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(34, 31, 31);
     display: none;
     position: fixed;
     top: 0em;
@@ -23,9 +39,13 @@ nav {
     font-style: italic;
     height: 39.3em;
     width: 16em;
+    left: 0;
+    text-align: start;
+    z-index: 1;
 }
 nav li a{
     text-decoration: none;
+    color: white !important;
 }
 nav li ul{
     display: none;
@@ -69,19 +89,26 @@ header h1{
 }
 #get-started{
     background-color: white;
+    padding-bottom: 50px;
+    border-bottom: 2px rgb(163, 163, 163) solid;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #get-started h2{
     font-size: 30px;
 }
 .option{
-    padding: 80px 5px;
-    line-height: 4em;
+    padding: 80px 0px;
     display: grid;
     grid-template-columns: 100%;
     justify-items: center;
     text-align: center;
     line-height: 5em;
-    border-bottom: rgb(211, 211, 211) solid;
+    margin: 0 60px;
+    border-bottom: 2px rgb(167, 167, 167) solid;
 }
 .option p{
     font-size: 0.9em;
@@ -121,7 +148,7 @@ header h1{
     margin-top: 35px;
 }
 #center .shape{
-    border-top: 5.5em solid rgb(34, 34, 34);
+    border-top: 5.5em solid rgb(34, 31, 31);
 }
 #right .icon{
     background-color: gray;
@@ -132,4 +159,253 @@ header h1{
 }
 .last{
     border-bottom: none !important;
+}
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttons button{
+    width: 88%;
+    font-size: 2.9em;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+#get{
+    background-color: #d52349;
+}
+#learn{
+    background-color: rgb(34, 31, 31);
+}
+#port {
+    margin: 10em 4em 5em;
+}
+#the-blog{
+    margin: 6em 4em 5em;
+}
+#port, #the-blog{
+    border-top: 2px rgb(163, 163, 163) solid;
+    text-align: center;
+}
+#port h1, #the-blog h1{
+    position: relative;
+    display: inline;
+    top: -1.3em;
+    background-color: #f7f7f7;
+    padding: 50px;
+    font-size: 2.8em;
+}
+#my-portfolio, #my-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio, .blogs{
+    margin-bottom: 65px;
+    width: 88%;
+    background-color: white;
+    border-bottom: 2px rgb(163, 163, 163) solid;
+}
+.portfolio img, .blogs img{
+    width: 100%;
+}
+.portfolio div, .blogs div{
+    padding: 3em;
+    line-height: 4.5em;
+}
+.portfolio h3{
+    font-size: 2em;
+}
+.portfolio p, .blogs p{
+    margin: 2em 0;
+    font-size: 15px;
+}
+.portfolio button, .blogs button{
+    padding: 1em;
+    font-size: 2.7em;
+    border: none;
+    background-color: rgb(34, 31, 31);
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    width: 97%;
+    margin: 0.5em 1.5%;
+}
+.blogs .read{
+    background-color: #d52349;
+}
+.posted {
+    font-style: italic;
+}
+.blogs i{
+    color: rgba(194, 194, 194, 0.555);
+    margin-right: 10px;
+}
+.footer{
+    background-color: rgb(34, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+}
+.footer h3{
+    color: white;
+    font-size: 2em;
+}
+#blandit li{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto;
+    padding: 3em 1em 0em;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    background-color: #d52349;
+    border-radius: 10px;
+    width: 6em;
+    height: 7.5em;
+    padding: 10px 0px 10px 50px;
+}
+.month, .day {
+    margin: 0px;
+    font-weight: 400;
+    color: white;
+}
+.month{
+    font-size: 3em;
+}
+.day{
+    font-size: 4.5em;
+    position: relative;
+    top: -25px;
+}
+#triangle{
+    position: absolute;
+    width: 0 ;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-left: 54px solid #d52349;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 200px;
+}
+.article {
+    grid-column: 2;
+    margin-left: 4em;
+    position: relative;
+    /* top: -210px; */
+    line-height: 5em;
+    padding: 0em 1em;
+    /* height: 22em; */
+    padding-bottom: 80px !important;
+}
+.article h4{
+    font-size: 3em;
+    color: white;
+}
+.article p{
+    font-size: 2.8em;
+}
+.about {
+    width: 88%;
+    align-self: center;
+    line-height: 5em;
+}
+.about img {
+    width: 100%;
+}
+.about p{
+    font-size: 15px;
+    margin: 5em 0;
+}
+.about button{
+    border: none;
+    background-color: #d52349;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 2.8em;
+    font-weight: 700;
+    width: 100%;
+}
+.tempus{
+    margin-top: 7em !important;
+}
+.tempus, .ipsum{
+    width: 90%;
+    margin: 1.8em;
+}
+.tempus li, .ipsum li{
+    list-style: none;
+    padding: 2em 0 3em;
+    font-size: 14.5px;
+    color: rgb(209, 209, 209);
+}
+.ipsum{
+    margin-bottom: 0em !important;
+}
+.vitae{
+    margin-top: 0em !important;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+.vitae h3{
+    font-size: 2.8em;
+    margin-bottom: 2em;
+}
+.vitae .social {
+    display: grid;
+    grid-template-columns: repeat(5, 130px);
+    gap: 30px;
+    margin-bottom: 10em;
+}
+.vitae .social div{
+    background-color: white;
+    width: 100px;
+    height: 110px;
+    /* margin-left: 1em; */
+}   
+.vitae i{
+    font-size: 9em;
+    position: relative;
+    left: -10px;
+    top: -20px;
+}
+.vitae li{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 0em !important;
+    line-height: 5em;
+    padding-bottom: 0;
+}
+.vitae h4{
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    top: -15px;
+}
+.end{
+    background-color: rgb(46, 42, 42);
+    width: 88%;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-weight: 300;
+    font-size: 14px;
+    margin: 4em 0em 5em;
+}
+.end div {
+    margin: 3em;
 }

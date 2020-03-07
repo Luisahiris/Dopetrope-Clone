@@ -1,3 +1,6 @@
+#bar{
+    display: none;
+}
 #howdy {
     display: grid;
     background-image: url(../img/pic01.jpg);
@@ -37,9 +40,10 @@ button{
     color: white;
 }
 #get-started{
-    display: grid;
-    grid-template-columns: 4em auto 4em;
-    grid-template-rows: auto 5em;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill, minmax(4em, auto));
+    grid-template-rows: auto 5em; */
+    flex-direction: column;
     background-color: white;
     text-align: center;
     padding: 0em 2em 5.3em;
@@ -50,7 +54,7 @@ button{
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fill, minmax(21.2em, auto));
 }
 .options h2{
     color: rgb(34, 34, 34);
@@ -63,36 +67,70 @@ button{
     line-height: 1.8em;
 }
 .option{
+    max-width: 350px;
+    justify-self: center;
+    /* flex: 2 1 auto; */
     padding: 5em 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+.banner{
+    width: 150px;
+    align-self: center;
 }
 #get-started .icon{
     color: white;
     font-size: 4.5em;
     display: inline-block;
-    width: 2em;
+    width: 143px;
     height: 1.5em;
     padding-top: 0.3em;
     border-radius: 0.1em;
     text-align: center;
-    margin-bottom: 0.4em;
+}
+.icon i{
+    position: relative;
+    top: 15px;
+}
+.shape{
+    margin-top: -5px;
+    width: 0 ;
+    height: 0;
+    /* border-left: 80px solid transparent;
+    border-right: 80px solid transparent; */
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-bottom: 2em;
 }
 #left .icon{
     background-color: #d52349;
 }
 #center .icon{
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(34, 31, 31);
 }
 #right .icon{
     background-color: gray;
 }
+#left .shape {
+    border-top: 3em solid #d52349;
+}
+#center .shape{
+    border-top: 3em solid rgb(34, 31, 31);
+}
+#right .shape{
+    border-top: 3em solid gray;
+}
 #center{
     box-shadow: 0px 0px 30px -10px rgb(177, 177, 177);
 }
-#get-started footer{    
+#get-started #buttons{    
     grid-column: 2;
     grid-row: 2;
 }
-#get-started footer button{
+#get-started #buttons button{
     margin: 8px;
     padding: 1em 4.3em;
     font-size: 1.2em;
@@ -104,16 +142,20 @@ button{
     background-color: rgb(34, 34, 34);
 }
 #my-portfolio{
-    display: grid;
-    grid-template-columns: repeat(3, 21.2em);
+    display: flex;
+    flex-flow: row wrap;
+    /* grid-template-columns: repeat(3, 21.2em); */
+    /* grid-template-columns: repeat(auto-fill, minmax(1em, 21.2em)); */
     justify-content: center;
-    gap: 3.2em;
+    flex: 2 1 auto;
+    /* gap: 3.2em; */
 }
 #port{
-    margin: 5em 7em 2em;
+    margin: 5em auto 2em;
     border-top: 0.01em solid;
     border-color: rgb(201, 201, 201);
     text-align: center;
+    width: 85%;
 }
 #port h1{
     background-color: #f7f7f7;
@@ -121,13 +163,13 @@ button{
     display: inline;
     top: -0.7em;
     padding: 0.5em;
-
 }
 #the-blog{
-    margin: 4em 7em 2em;
+    margin: 4em auto 2em;
     border-top: 0.01em solid;
     border-color: rgb(201, 201, 201);
     text-align: center;
+    width: 85%;
 }
 #the-blog h1{
     background-color: #f7f7f7;
@@ -140,6 +182,8 @@ button{
     background-color: white;
     border-bottom: 0.01em solid;
     border-color: rgb(201, 201, 201);
+    width: 21.2em;
+    margin: 0 1.5em 30px;
 }
 .portfolio div{
     padding: 1.8em;
@@ -163,7 +207,7 @@ button{
 }
 #my-blog{
     display: grid;
-    grid-template-columns: repeat(2, 33.5em);
+    grid-template-columns: repeat(auto-fill, minmax(auto, 33.5em));
     justify-content: center;
     gap: 3em;
 }
@@ -209,4 +253,28 @@ button{
 }
 .comments{
     background-color: rgb(34, 34, 34);
+}
+
+@media all and (max-width: 1100px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center{
+        box-shadow: none;
+    }
+    .portfolio button {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    #howdy {
+        background-size: auto;
+    }
+    #howdy div{
+        width: 100%;
+    }
 }

@@ -73,10 +73,12 @@ nav li ul li{
 }
 .footer{
     background-color: rgb(34, 34, 34);
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, auto);
-    place-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    /* grid-template-columns: repeat(auto-fill, minmax(auto, 30%));
+    grid-template-rows: auto; */
+    justify-content: space-around;
+    flex: 2 1 auto;
     margin-top: 4em;
     padding-top: 2em;
 }
@@ -91,20 +93,23 @@ nav li ul li{
 }
 
 #blandit{
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 3;
-    grid-row: 1;
+    grid-row: 1; */
+    width: 60%;
 }
-#blandit ul li{
+#blandit li{
     display: grid;
     grid-template-columns: 5em auto;
-    gap: 2em;
+    grid-template-rows: auto;
+    gap: 1em;
     border-bottom: 0.01em solid;
     border-color: rgb(43, 43, 43);
     padding: 1em 0em;
 }
 .last{
     border-bottom: none !important;
+
 }
 .date{
     place-self: center;
@@ -119,17 +124,36 @@ nav li ul li{
     color: white;
     font-weight: 300;
     margin-left: -1em;
+    position: relative;
+    bottom: -10px;
 }
-.date span{
+.date .month {
+    margin-top: 0em;
+}
+.date .day{
     font-size: 2em;
     font-weight: 400;
     margin: 0em;
     position: relative;
-    top: -0.3em;
+    top: -0.9em;
+}
+#triangle{
+    position: absolute;
+    width: 0 ;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 33px solid transparent;
+    border-left: 20px solid #d52349;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 53px;
+    top: -2px;
 }
 .article{
     line-height: 0.2em;
     font-weight: 300;
+    grid-column: 2;
+    grid-row: 1;
 }
 .article h4{
     color: white;
@@ -142,6 +166,7 @@ nav li ul li{
     line-height: 1.8em;
     padding: 1.4em;
     font-weight: 300;
+    width: 30%;
 }
 .about img{
     width: 21.5em;
@@ -149,6 +174,7 @@ nav li ul li{
 }
 .tempus, .ipsum, .vitae{
     grid-row: 2;
+    width: 30%;
 }
 .tempus, .ipsum{
     line-height: 2.5em;
@@ -218,9 +244,9 @@ nav li ul li{
     left: -0.1em;
 }
 .end{
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 4;
-    grid-row: 3;
+    grid-row: 3; */
     display: grid;
     place-self: center;
     grid-template-columns: 14em 10em 15em;
@@ -240,4 +266,14 @@ nav li ul li{
     border-right: 0.01em solid;
     border-left: 0.01em solid;
     border-color: rgb(70, 69, 69);
+}
+
+@media all and (max-width: 1100px) {
+    .footer {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #blandit {
+        width: 90%;
+    }
 }

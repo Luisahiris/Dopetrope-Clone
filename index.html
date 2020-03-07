@@ -3,19 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Dopetrope Clone</title>
-        <link rel="stylesheet" href="css/indexMobile.css">
-        <link rel="stylesheet" href="css/index.css" media="screen and (min-device-width: 1200px and max-device-width: 1600px)">
+        <!-- <link rel="stylesheet" href="css/indexMobile.css" media="all and (max-width: 1000px) "> -->
+        <!-- <link rel="stylesheet" href="css/index.css" media="screen and (min-width: 1200px) and (max-width: 1600px) ">
+        <link rel="stylesheet" href="css/baseCSS.css" media="screen and (min-width: 800px) and (max-width: 1600px) "> -->
+        <link rel="stylesheet" href="css/index.css" >
+        <link rel="stylesheet" href="css/baseCSS.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/baseCSS.css" media="screen and (min-device-width: 1200px and max-device-width: 1600px)">
+        <!-- <link rel="stylesheet" href="css/baseCSS.css" media="screen and (min-device-width: 1200px and max-device-width: 1600px)"> -->
         <script src="https://kit.fontawesome.com/e164eef749.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header id="header">
+            <i id="bar" class="fas fa-bars icon-bar"></i>
             <h1>Dopetrope</h1>
-            <nav>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li id="dropdown">
-                    <a>Dropdown</a>
+            <nav id="nav">
+                <li class="current"><a>Home</a></li>
+                <li>
+                    <a id="dropdown">Dropdown</a>
                     <ul id="first">
                         <li><a href="#">Lorem ipsum dolor </a></li>
                         <li><a href="#">Magna phasellus</a></li>
@@ -32,8 +36,8 @@
                         <li><a href="#">Veroeros feugiat</a></li>
                     </ul>
                 </li>
-            <li id="leftSide"><a href="sidebar.html" onclick="() => { Sidebar ( left ) }">Left Sidebar</a></li>
-                <li id="rightSide"><a href="sidebar.html">Right Sidebar</a></li>
+                <li id="leftSide"><a href="sidebar.html">Left Sidebar</a></li>
+                <li id="rightSide"><a href="sidebar.html"">Right Sidebar</a></li>
                 <li id="noSide"><a href="sidebar.html">No Sidebar</a></li>
             </nav>
         </header>
@@ -46,20 +50,26 @@
         <div id="get-started">
             <div class="options">
                 <div class="option" id="left">
-                    <div class="icon"><i class="fas fa-cog"></i></div>
-                    <div class="shape"></div>
+                    <div class="banner">
+                        <div class="icon"><i class="fas fa-cog"></i></div>
+                        <div class="shape"></div>
+                    </div>
                     <h2>Ipsum consequat</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
-                <div class="option" id="center">    
-                    <div class="icon"><i class="fas fa-bolt"></i></div>
-                    <div class="shape"></div>
+                <div class="option" id="center">  
+                    <div class="banner">
+                        <div class="icon"><i class="fas fa-bolt"></i></div>
+                        <div class="shape"></div>
+                    </div>  
                     <h2>Magna etiam dolor</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
                 <div class="option last" id="right">
-                    <div class="icon"><i class="fas fa-star"></i></div>
-                    <div class="shape"></div>
+                    <div class="banner">
+                        <div class="icon"><i class="fas fa-star"></i></div>
+                        <div class="shape"></div>
+                    </div>
                     <h2>Tempus adipiscing</h2>
                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
                 </div>
@@ -125,9 +135,9 @@
             </div>
         </section>
         <section>
-            <header id="the-blog">
+            <div id="the-blog">
                 <h1>The Blog</h1>
-            </header>
+            </div>
             <div id="my-blog">
                 <div class="blogs">
                     <img src="img/pic08.jpg">
@@ -155,41 +165,57 @@
             <div id="blandit">
                 <ul><h3>Blandit nisl adipiscing</h3>
                     <li>
-                        <div class="date">Jan<span>27</span></div>
+                        <div class="date">
+                            <p class="month">Jan</p><p class="day">27</p><div id="triangle"></div>
+                        </div>
                         <div class="article">
                             <h4>Lorem dolor sit amet veroeros</h4>
                             <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="date">Jan<span>23</span></div>
+                        <div class="date">
+                            <p class="month">Jan</p><p class="day">23</p><div id="triangle"></div>
+                        </div>
                         <div class="article">
                             <h4>Ipsum sed blandit nisl consequat</h4>
                             <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="date">Jan<span>15</span></div>
+                        <div class="date">
+                            <p class="month">Jan</p><p class="day">15</p><div id="triangle"></div>
+                        </div>
                         <div class="article">
                             <h4>Magna tempus lorem feugiat</h4>
                             <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="date">Jan<span>12</span></div>
+                        <div class="date">
+                            <p class="month">Jan</p><p class="day">12</p><div id="triangle"></div>
+                        </div>
                         <div class="article">
                             <h4>Dolore tempus ipsum feugiat nulla</h4>
                             <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
                         </div>
                     </li>
                     <li class="last">
-                        <div class="date">Jan<span>10</span></div>
+                        <div class="date">
+                            <p class="month">Jan</p><p class="day">10</p><div id="triangle"></div>
+                        </div>
                         <div class="article">
                             <h4>Blandit tempus aliquam?</h4>
                             <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="about">
+                <h3>What's this all about?</h3>
+                <img src="img/pic10.jpg">
+                <p>This is <span>Dopetrope</span> a free, fully responsive HTML5 site template by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project – just don't forget to credit us!</p>
+                <button>Find out more</button>
             </div>
             <div class="tempus">
                 <ul><h3>Tempus consequat</h3>
@@ -210,12 +236,6 @@
                     <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
                     <li class="last"><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
                 </ul>
-            </div>
-            <div class="about">
-                <h3>What's this all about?</h3>
-                <img src="img/pic10.jpg">
-                <p>This is <span>Dopetrope</span> a free, fully responsive HTML5 site template by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project – just don't forget to credit us!</p>
-                <button>Find out more</button>
             </div>
             <div class="vitae">
                 <ul><h3>Vitae tempor lorem</h3>
@@ -248,6 +268,7 @@
                 <div>Demo Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a></div>
             </div>
         </footer>
-        <script src="app.js"></script>
+        <script type="module" src="/js/app.js"></script>
+        <script type="module" src="/js/appMobile.js"></script>
     </body>
 </html>
